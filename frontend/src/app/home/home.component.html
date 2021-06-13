@@ -1,0 +1,56 @@
+
+ <!-- middle -->
+<div class="w3-container">
+
+  <div class="contentt" style="margin-top:75px; margin-left:20px;">
+    
+        <div id="container" style="text-align:center;">
+
+    <br>
+    <h2>Automated Resume Extraction System</h2> 
+
+  <div class="box fade-in one">
+    <hr>
+
+    <br><br><br><br><br>
+    <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="post">
+
+    <pre style="font-size:16px;"><b>Enter Name : </b><input type="text" name="name" required="required" />  </pre><br/>
+
+    <pre style="font-size:16px; margin-left: 13.5%;"><b>Select Resume : </b><input type="file" name="filetoupload" required="required" />  </pre><br/><br/>
+
+    <input type="submit" value="Next >" name="submit" class="btn btn-success"><br/><br/>
+    
+    <span id="status"></span>
+    
+    </form>
+  </div>
+  </div>
+
+  
+
+  </div>
+
+  </div>
+
+<script>
+              $(document).ready(function() {
+              $('#uploadForm').submit(function() {
+              $("#status").empty().text("File is uploading...");
+
+              $(this).ajaxSubmit({
+
+              error: function(xhr) {
+              status('Error: ' + xhr.status);
+              },
+
+              success: function(response) {
+              console.log(response)
+              $("#status").empty().text(response);
+              }
+              });
+
+              return false;
+              });
+              });
+ </script>

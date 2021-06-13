@@ -1,0 +1,34 @@
+{
+  "name": "resumeextraction",
+  "version": "1.0.0",
+  "description": "Automated Resume Extraction System",
+  "main": "extract.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "formidable": "^1.2.1",
+    "nodemailer": "^4.7.0",
+    "pdf-text-extract": "^1.5.0",
+    "pdf-to-text": "^0.0.7",
+    "pdftotextjs": "^0.5.1",
+    "pdftxt": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnybhawsar/Automated-Resume-Extraction.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Sunny Bhawsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunnybhawsar/Automated-Resume-Extraction/issues"
+  },
+  "homepage": "https://github.com/sunnybhawsar/Automated-Resume-Extraction#readme"
+}
